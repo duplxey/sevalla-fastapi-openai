@@ -1,0 +1,2 @@
+fastapi[standard]==0.121.3
+openai==2.8.1
