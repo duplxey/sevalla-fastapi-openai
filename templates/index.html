@@ -53,7 +53,7 @@
 
                 // Initialize a SSE connection to receive streamed responses
                 const urlEncodedMessage = encodeURIComponent(input.value);
-                const eventSource = new EventSource(`/stream?message=${urlEncodedMessage}`);
+                const eventSource = new EventSource(`/chat-stream?message=${urlEncodedMessage}`);
 
                 // Handle SSE events (start, <unnamed>, end, error)
                 eventSource.addEventListener("start", () => {
